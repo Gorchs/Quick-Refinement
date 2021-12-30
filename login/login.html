@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="">
+    <title>Quick Refinement - LOGIN</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="{% static 'manipulation.js' %}"></script>
+
+  </head>
+  <body id="body">
+
+    <div id="user_info_row" class="row">
+        <div id="timer" class="user_info_column"><div id="timer" ></div></div>
+        <div id="user_info_column2" class="user_info_column"></div>
+        <div id="login" class="user_info_column"><div id="user_login"></div></div>
+        <div id="logout" class="user_info_column"><div id="logout_icon" ></div></div>
+    </div>
+
+
+    <div id="splash">
+        <button type="button" class="login-button"><a href="{% url 'Organize Refinement' %}">Organize a fast refinement</a></button>
+        <button type="button" class="login-button"><a href="{% url 'Participate Refinement' %}">Participate in a fast refinement</a></button>
+    </div>
+
+  </body>
+</html>

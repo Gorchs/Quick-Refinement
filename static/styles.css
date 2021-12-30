@@ -1,0 +1,112 @@
+a {
+    color: grey;
+    text-decoration: none;
+}
+button {
+  border-radius: 10px;
+}
+a:hover {
+  font-weight: bold;
+}
+.task {
+  border: 2px solid #000;
+  z-index: 1;
+  width: 160px;
+  margin: 8px;
+  position:relative;
+}
+.task p {
+  margin:0px;
+}
+.task .title {
+  font-weight: bold;
+
+}
+.task .summary {
+  font-stretch: extra-condensed;
+  color: grey;
+}
+.user_info_column{
+  width:25%;
+}
+.label_columns{
+  width:11%;
+  text-align: center;
+  font-weight:bold;
+  color: white;
+  font-size:2vw;
+  border: 1px #000 solid;
+}
+.row {
+  display: flex;
+  z-index: 0;
+}
+.data_column {
+  flex: 50%;
+  border: 1px #000 solid;
+  z-index: 0;
+  height:80vh;
+}
+.login-button{
+  height:80px;
+  padding:10px;
+  font-size: 1.5em;
+  margin:50px;
+
+}
+#splash {
+  border: 4px #000 solid;
+  width: 99vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+#canvas {
+  border: 5px #000 solid;
+  z-index: -1;
+}
+#logout{
+  text-align: right;
+  padding-right: 5%;
+
+}
+#timer{
+  text-align: right;
+  font-weight: bold;
+}
+#login{
+  text-align: right;
+  font-weight: bold;
+}
+#user_info_row{
+  height:50px;
+}
+#header{
+  width:100%
+}
+#row_labels{
+  height: 10%;
+  border: 1px #000 solid;
+  color: light_grey;
+}
+#blank_corner{
+  width:10%;
+}
+#labels_container{
+  width: 90%;
+}
+#blank_row{
+  height: 50%;
+
+  font-weight: bold;
+  font-size:2vw;
+  padding-left: 30%;
+}
+#labels{
+  height:50%;
+  background-color: grey;
+}
+#main {
+  border: 4px #000 solid;
+}

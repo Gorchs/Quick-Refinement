@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="">
+    <title>Quick Refinement</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="{% static 'manipulation.js' %}"></script>
+  </head>
+  <body id="body">
+
+  <!--
+    código para usar la opcion de canvas
+    <body id="main" onresize="resize_canvas()" onload="initial_setup()" >
+
+      <canvas id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+  -->
+    <div id="user_info_row" class="row">
+        <div id="timer" class="user_info_column"><div id="timer" class="" >13:45</div></div>
+        <div id="user_info_column2" class="user_info_column"></div>
+        <div id="login" class="user_info_column"><div id="user_login" class="" >joseg</div></div>
+        <div id="logout" class="user_info_column"><div id="logout_icon" class="" ><img src="{% static 'logout_small.png' %}" alt="logout"></div></div>
+    </div>
+    <div id="main">
+      <div id="row_labels" class="row">
+        <div id="blank_corner" class="header_column"></div>
+        <div id="labels_container" class="header_column">
+          <div id="blank_row" class="row">STORY POINTS ESTIMATION</div>
+          <div id="labels" class="row">
+            <div id="label1" class="label_columns">0.5</div>
+            <div id="label2" class="label_columns">1</div>
+            <div id="label3" class="label_columns">2</div>
+            <div id="label4" class="label_columns">3</div>
+            <div id="label5" class="label_columns">5</div>
+            <div id="label6" class="label_columns">8</div>
+            <div id="label7" class="label_columns">11</div>
+            <div id="label8" class="label_columns">19</div>
+            <div id="label9" class="label_columns">30</div>
+          </div>
+        </div>
+      </div>
+      <div id="row_columns" class="row">
+        <div id="column1" class="data_column" ondrop="drop(ee{{ title }}:{{ summary }}nt)" ondragover="allowDrop(event)">
+          {%for t in task %}
+          <div id="item" class="task" draggable="true" ondragstart="drag(event)">
+            <p class="title">{{ t.header }}</p>
+            <hr>
+            <p class="summary">{{ t.description }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        <div id="column2" class="data_column" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="column3" class="data_column" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="column4" class="data_column" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="column5" class="data_column" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="column6" class="data_column" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="column7" class="data_column" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="column8" class="data_column" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="column9" class="data_column" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="column10" class="data_column"ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
